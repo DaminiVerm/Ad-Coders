@@ -1,0 +1,287 @@
+/* Navbar Gradient */
+
+/* Navbar background */
+.custom-nav {
+  background: linear-gradient(120deg, #1e1b4b, #3730a3, #2563eb);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35);
+  color: white;
+}
+
+/* Brand */
+.navbar-brand {
+  font-size: 1.3rem;
+  letter-spacing: .5px;
+  color: white;
+}
+
+/* Nav links base style */
+.nav-btn {
+  margin-left: 8px;
+  padding: 8px 16px !important;
+  border-radius: 25px;
+  transition: .35s ease-in-out;
+  font-weight: 600;
+  letter-spacing: .3px;
+}
+
+/* Active link */
+.nav-btn.active {
+  background: #ffffff;
+  color: #1f2937 !important;
+}
+
+/* Hover effect — background becomes white */
+.nav-btn:hover {
+  background: #ffffff;
+  color: #111827 !important;
+  transform: translateY(-2px);
+}
+
+/* Mobile improvement */
+@media (max-width: 992px) {
+  .nav-btn {
+    display: inline-block;
+    margin: 6px 0;
+    width: 80%;
+  }
+}
+/* slider buttons */
+
+/* Carousel Slide Buttons */
+.bg-gradient-light {
+  background: linear-gradient(135deg, #eef2ff, #e0f2fe);
+}
+
+.carousel-card {
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carousel-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.25);
+}
+
+.carousel-logo {
+  width: 90px;
+  height: 60px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.carousel-card:hover .carousel-logo {
+  transform: scale(1.1);
+}
+
+/* Carousel Pill Buttons */
+.btn-slide {
+  background-color: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-slide:hover {
+  background-color: #fff;
+  color: #2563eb;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+  transform: translateY(-2px);
+}
+
+.btn-slide.active {
+  background-color: #4338ca;
+  color: #fff;
+  transform: scale(1.1);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+/* Responsive Adjustments */
+@media(max-width:768px){
+  .carousel-logo {
+    width: 60px;
+    height: 40px;
+  }
+}
+
+
+/* Section Background */
+.bg-gradient-light {
+  background: linear-gradient(135deg, #eef2ff, #e0f2fe);
+}
+
+/* Carousel Cards */
+.carousel-card {
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carousel-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.25);
+}
+
+/* Carousel Logos */
+.carousel-logo {
+  width: 90px;
+  height: 60px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.carousel-card:hover .carousel-logo {
+  transform: scale(1.1);
+}
+
+/* Indicators */
+.carousel-indicators button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #2563eb;
+  opacity: 0.7;
+}
+
+.carousel-indicators .active {
+  background-color: #4338ca;
+}
+
+
+/* Add Job Button */
+.add-job-btn {
+  background: linear-gradient(120deg, #1e1b4b, #3730a3, #2563eb);
+  color: white;
+  border-radius: 10px;
+}
+
+.add-job-btn:hover {
+  opacity: .9;
+  color: #fff;
+}
+
+/* Mobile spacing improvements */
+@media (max-width: 768px) {
+  .carousel-caption {
+    font-size: 14px;
+  }
+
+  .dashboard-card {
+    padding: 12px;
+  }
+}
+
+
+.status-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* ===============================
+   Base Pill Style
+================================ */
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 18px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  border: 1px solid #d1d5db;
+  background-color: #f9fafb;
+  color: #374151;
+  transition: all 0.25s ease;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+}
+
+/* Hover (subtle & professional) */
+.status-pill:hover {
+  background-color: #f1f5f9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+}
+
+.remaining {
+  background-color: #f8fafc;
+  color: #1f2937;
+}
+
+.active {
+  background-color: #eef2f7;
+  color: #111827;
+}
+
+.inactive {
+  background-color: #f3f4f6;
+  color: #4b5563;
+}
+
+/* ===============================
+   Application Status
+================================ */
+.applied {
+  background-color: #f8fafc;
+  color: #1e293b;
+}
+
+.pending {
+  background-color: #fefce8;
+  color: #854d0e;
+}
+
+.shortlisted {
+  background-color: #ecfdf5;
+  color: #065f46;
+}
+
+.rejected {
+  background-color: #fef2f2;
+  color: #7f1d1d;
+}
+
+.selected {
+  background-color: #f0fdf4;
+  color: #14532d;
+}
+
+/* ===============================
+   Placement Status
+================================ */
+.placed {
+  background-color: #ecfdf5;
+  color: #065f46;
+}
+
+.awaiting {
+  background-color: #fefce8;
+  color: #92400e;
+}
+
+.eligible {
+  background-color: #eff6ff;
+  color: #1e3a8a;
+}
+
+.unplaced {
+  background-color: #f1f5f9;
+  color: #334155;
+}
+
+.process {
+  background-color: #f0f9ff;
+  color: #075985;
+}
+
+.notapplied {
+  background-color: #f8fafc;
+  color: #475569;
+}

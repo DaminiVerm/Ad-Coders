@@ -1,0 +1,291 @@
+body {
+  background: #f4f6fb;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Navbar */
+/* .custom-nav {
+  background: linear-gradient(90deg, #18d9af, #e8f5f6);
+} */
+
+/* Hero */
+.hero {
+  padding: 140px 0 120px;
+  color: white;
+  background: linear-gradient(120deg, #1e1b4b, #3730a3, #2563eb);
+}
+
+/* Section Title */
+.section-title {
+  font-weight: 700;
+  color: #2f2f2f;
+}
+
+/* Section Background */
+.placement-section {
+  background: linear-gradient(120deg, #1e1b4b, #3730a3, #2563eb);
+}
+
+/* Stat Cards */
+.stat-card {
+  padding: 22px;
+  border-radius: 20px;
+  color: #fff;
+  transition: .35s ease;
+  backdrop-filter: blur(6px);
+}
+
+/* Hover Animation */
+.stat-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 18px 40px rgba(0,0,0,.35);
+}
+
+/* Icons */
+.stat-icon {
+  font-size: 38px;
+  margin-bottom: 6px;
+}
+
+/* Colors */
+.stat-purple {
+  background: linear-gradient(135deg,#a78bfa,#7c3aed);
+}
+
+.stat-blue {
+  background: linear-gradient(135deg,#60a5fa,#2563eb);
+}
+
+.stat-green {
+  background: linear-gradient(135deg,#a78bfa,#7c3aed);
+}
+
+/* Navbar background */
+.custom-nav {
+  background: linear-gradient(120deg, #1e1b4b, #3730a3, #2563eb);
+  padding: 10px 0;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 10px 25px rgba(0,0,0,.25);
+}
+
+/* Brand */
+.navbar-brand {
+  font-size: 1.3rem;
+  letter-spacing: .5px;
+}
+
+/* Nav links base style */
+.nav-btn {
+  margin-left: 8px;
+  padding: 8px 16px !important;
+  border-radius: 25px;
+  transition: .35s ease-in-out;
+  font-weight: 600;
+  letter-spacing: .3px;
+}
+
+/* Active link */
+.nav-btn.active {
+  background: #ffffff;
+  color: #1f2937 !important;
+}
+
+/* Hover effect — background becomes white */
+.nav-btn:hover {
+  background: #ffffff;
+  color: #111827 !important;
+  transform: translateY(-2px);
+}
+
+/* Mobile improvement */
+@media (max-width: 992px) {
+  .nav-btn {
+    display: inline-block;
+    margin: 6px 0;
+    width: 80%;
+  }
+}
+
+/* slider buttons */
+
+/* Carousel Slide Buttons */
+.bg-gradient-light {
+  background: linear-gradient(135deg, #eef2ff, #e0f2fe);
+}
+
+.carousel-card {
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carousel-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.25);
+}
+
+.carousel-logo {
+  width: 90px;
+  height: 60px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.carousel-card:hover .carousel-logo {
+  transform: scale(1.1);
+}
+
+/* Carousel Pill Buttons */
+.btn-slide {
+  background-color: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-slide:hover {
+  background-color: #fff;
+  color: #2563eb;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+  transform: translateY(-2px);
+}
+
+.btn-slide.active {
+  background-color: #4338ca;
+  color: #fff;
+  transform: scale(1.1);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+/* Responsive Adjustments */
+@media(max-width:768px){
+  .carousel-logo {
+    width: 60px;
+    height: 40px;
+  }
+}
+
+
+/* Section Background */
+.bg-gradient-light {
+  background: linear-gradient(135deg, #eef2ff, #e0f2fe);
+}
+
+/* Carousel Cards */
+.carousel-card {
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carousel-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.25);
+}
+
+/* Carousel Logos */
+.carousel-logo {
+  width: 90px;
+  height: 60px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.carousel-card:hover .carousel-logo {
+  transform: scale(1.1);
+}
+
+/* Indicators */
+.carousel-indicators button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #2563eb;
+  opacity: 0.7;
+}
+
+.carousel-indicators .active {
+  background-color: #4338ca;
+}
+
+/* Student Cards Text */
+#recent-placed-students .card p {
+  font-size: 1rem;
+}
+
+#recent-placed-students .card small {
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+/* Responsive Adjustments */
+@media(max-width:768px){
+  .carousel-logo {
+    width: 60px;
+    height: 40px;
+  }
+}
+
+
+/* Numbers */
+.count-number {
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+
+/* Feature Cards */
+.feature-card {
+  background: white;
+  border-radius: 18px;
+  transition: 0.3s;
+  box-shadow: 0 10px 28px rgba(0,0,0,.08);
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+}
+
+.feature-icon {
+  font-size: 36px;
+  color: #4f46e5;
+}
+
+/* Top Companies */
+.top-company-bg {
+  background: #eef2ff;
+}
+
+.company-card {
+  background: white;
+  border-radius: 18px;
+  padding: 18px;
+  box-shadow: 0 8px 20px rgba(0,0,0,.08);
+  transition: .3s;
+}
+
+.company-card:hover {
+  transform: scale(1.05);
+}
+
+.company-logo {
+  width: 90px;
+  height: 60px;
+  object-fit: contain;
+}
+
+/* Footer */
+.footer {
+  background: #111827;
+  color: white;
+}
+
+.footer h5 {
+  color: #93c5fd;
+}

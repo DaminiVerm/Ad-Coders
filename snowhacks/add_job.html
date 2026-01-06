@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Add New Job Post</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="add_job.css" />
+</head>
+
+<body>
+
+<!-- Full Page Gradient Background -->
+<div class="job-bg d-flex justify-content-center align-items-center min-vh-100">
+
+  <!-- 🌟 Gradient Form Container -->
+  <div class="job-form-wrapper p-4 p-md-5">
+
+    <h3 class="text-center fw-bold text-white mb-2">Add New Job Post</h3>
+    <p class="text-center text-light opacity-75 mb-4">
+      Enter company recruitment details below
+    </p>
+
+    <form>
+
+      <div class="mb-3">
+        <label class="form-label text-white fw-semibold">Company Name</label>
+        <input type="text" class="form-control form-white" placeholder="Enter company name" required>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label text-white fw-semibold">Job Role</label>
+        <input type="text" class="form-control form-white" placeholder="Enter job role" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label text-white fw-semibold">Package</label>
+        <input type="text" class="form-control form-white" placeholder="Package" required>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label text-white fw-semibold">Recruitment Status</label>
+        <select class="form-select form-white" required>
+          <option selected disabled>Select status</option>
+          <option>Not Started</option>
+          <option>In Progress</option>
+          <option>Shortlisting</option>
+          <option>Interview Ongoing</option>
+          <option>Completed</option>
+        </select>
+      </div>
+
+      <!-- ✨ Job Description -->
+      <div class="mb-3">
+        <label class="form-label text-white fw-semibold">Job Description</label>
+        <textarea class="form-control form-white job-desc"
+                  rows="4"
+                  placeholder="Enter job description, eligibility, skills required..."
+                  required></textarea>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label class="form-label text-white fw-semibold">Current Round</label>
+          <input type="number" class="form-control form-white" placeholder="e.g. 2">
+        </div>
+
+        <div class="col-md-6 mb-3">
+          <label class="form-label text-white fw-semibold">Total Rounds</label>
+          <input type="number" class="form-control form-white" placeholder="e.g. 5">
+        </div>
+      </div>
+
+      <button class="btn submit-btn w-100 mt-2">
+        ➕ Submit Job Post
+      </button>
+
+    </form>
+
+  </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

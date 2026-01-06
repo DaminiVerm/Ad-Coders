@@ -1,0 +1,134 @@
+/* Page Background */
+body{
+  background-color: white;
+}
+
+/* Wrapper — now transparent / white */
+.dashboard-bg {
+  min-height: 100vh;
+  background: white;
+}
+
+
+/* Navbar background */
+.custom-nav {
+  background: linear-gradient(120deg, #1e1b4b, #3730a3, #2563eb);
+  padding: 10px 0;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 10px 25px rgba(0,0,0,.25);
+  color: white;
+}
+
+/* Brand */
+.navbar-brand {
+  font-size: 1.3rem;
+  letter-spacing: .5px;
+}
+
+/* Nav links base style */
+.nav-btn {
+  margin-left: 8px;
+  padding: 8px 16px !important;
+  border-radius: 25px;
+  transition: .35s ease-in-out;
+  font-weight: 600;
+  letter-spacing: .3px;
+}
+
+/* Active link */
+.nav-btn.active {
+  background: #ffffff;
+  color: #1f2937 !important;
+}
+
+/* Hover effect — background becomes white */
+.nav-btn:hover {
+  background: #ffffff;
+  color: #111827 !important;
+  transform: translateY(-2px);
+}
+
+/* Mobile improvement */
+@media (max-width: 992px) {
+  .nav-btn {
+    display: inline-block;
+    margin: 6px 0;
+    width: 80%;
+  }
+}
+
+
+/* Navbar */
+.custom-nav {
+  background: linear-gradient(120deg, #1e1b4b, #3730a3, #2563eb);
+  box-shadow: 0 4px 18px rgba(0,0,0,.35);
+}
+
+.brand-title {
+  font-size: 1.2rem;
+  letter-spacing: .4px;
+}
+
+/* Student Profile Card */
+.student-card {
+  background: #ffffff;
+  border-radius: 20px;
+  border: 2px solid #0f172a;
+  padding: 18px;
+  box-shadow: 0 18px 40px rgba(0,0,0,.35);
+}
+
+.student-card p {
+  margin-bottom: 6px;
+}
+
+.placed-status {
+  margin-top: 5px;
+}
+
+/* Stats */
+.stat-box {
+  border-radius: 18px;
+  padding: 14px;
+  color: #ffffff;
+  box-shadow: 0 14px 32px rgba(0,0,0,.35);
+  text-align: center;
+}
+
+.stat-purple { background: #4c1d95; }
+.stat-blue   { background: #4c1d95; }
+.stat-green  { background: #4c1d95; }
+
+/* Recruiter Section */
+.recruiter-card {
+  border-radius: 18px;
+  border: 2px solid #0f172a;
+}
+
+/* Gradient Button */
+.btn-gradient {
+  background: linear-gradient(120deg, #1e1b4b, #3730a3, #2563eb);
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 14px;
+  padding: 6px 14px;
+  border: none;
+}
+
+.btn-gradient:hover {
+  background: #ffffff;
+  color: #1e1b4b;
+  border: 2px solid #1e1b4b;
+}
+
+/* Responsive */
+@media(max-width: 576px){
+  .student-card,
+  .recruiter-card {
+    border-radius: 14px;
+  }
+
+  .stat-box {
+    padding: 10px;
+  }
+}

@@ -1,0 +1,84 @@
+/* Page background */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+}
+
+/* Main container */
+.container {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: line;
+
+}
+
+/* Page title */
+h1 {
+  text-align: center;
+  font-size: 2.8em;
+  margin-bottom: 50px;
+  color: #270555;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+}
+
+/* Grid for company cards */
+.companies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+/* Glassmorphism card style */
+.company-card {
+  background: rgba(255, 255, 255, 0.05);
+  background: linear-gradient(120deg, #1e1b4b, #3730a3, #2563eb);
+
+  backdrop-filter: blur(10px);
+  padding: 25px 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Card hover effect */
+.company-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+  background: rgba(255, 255, 255, 0.1);
+  color: rgb(30, 30, 49);
+}
+
+/* Card headings */
+.company-card h3 {
+  font-size: 1.6em;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.company-card h3 i {
+  color: #ffd700;
+  margin-right: 8px;
+}
+
+/* Card details */
+.company-card p {
+  margin: 8px 0;
+  font-size: 1em;
+  color: #e0e0ff;
+}
+
+.company-card p i {
+  color: #00ffff;
+  margin-right: 6px;
+}
+
+/* Responsive title */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2em;
+    margin-bottom: 30px;
+  }
+}

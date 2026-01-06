@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Previous Companies - Campus Placements</title>
+  <link rel="stylesheet" href="companies.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Previously Visited Companies</h1>
+
+    <div class="companies-grid" id="companiesGrid">
+      <!-- Company cards will go here -->
+    </div>
+  </div>
+
+  <script>
+    // Sample data of previous companies
+    const companies = [
+      { name: "Google", role: "Software Engineer", year: 2025, rounds: 3 },
+      { name: "Microsoft", role: "Software Developer", year: 2025, rounds: 2 },
+      { name: "Amazon", role: "SDE Intern", year: 2024, rounds: 3 },
+      { name: "TCS", role: "Graduate Trainee", year: 2023, rounds: 2 },
+      { name: "Infosys", role: "Software Engineer", year: 2024, rounds: 2 }
+    ];
+
+    const grid = document.getElementById('companiesGrid');
+
+    companies.forEach(company => {
+      const card = document.createElement('div');
+      card.className = 'company-card';
+      card.innerHTML = `
+        <h3>${company.name}</h3>
+        <p><strong>Role:</strong> ${company.role}</p>
+        <p><strong>Year:</strong> ${company.year}</p>
+        <p><strong>Rounds:</strong> ${company.rounds}</p>
+      `;
+      grid.appendChild(card);
+    });
+  </script>
+</body>
+</html>

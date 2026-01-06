@@ -1,0 +1,17 @@
+body{
+  background:#F3F4F6;
+}
+
+.navbar{
+  background:#4F46E5!important;
+}
+
+.brand-title{
+  color:#fff;
+  font-weight:700;
+}
+
+.status-card{
+  border-radius:16px;
+  box-shadow:0 10px 25px rgba(0,0,0,.1);
+}

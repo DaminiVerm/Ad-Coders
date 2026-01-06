@@ -1,0 +1,96 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Background Gradient */
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(120deg, #1e1b4b, #3730a3, #2563eb);
+}
+
+/* Center Wrapper */
+.register-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Card Layout */
+.register-card {
+  background: #ffffff;
+  width: 420px;
+  padding: 28px 28px 32px;
+  border-radius: 20px;
+  box-shadow: 0 18px 45px rgba(0,0,0,.35);
+}
+
+/* Title */
+.title {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #1e1b4b;
+}
+
+/* Input Group */
+.input-group {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #1e1b4b;
+}
+
+.input-group input,
+.input-group select {
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid #cbd5e1;
+  outline: none;
+  font-size: 0.95rem;
+  background: #f8fafc;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+  border-color: #2563eb;
+}
+
+/* Submit Button */
+.submit-btn {
+  width: 100%;
+  margin-top: 18px;
+  padding: 10px 0;
+  border-radius: 16px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  color: #fff;
+  background: linear-gradient(120deg, #1e1b4b, #3730a3, #2563eb);
+  transition: 0.35s ease;
+}
+
+.submit-btn:hover {
+  background: #fff;
+  color: #1e1b4b;
+  border: 1px solid #1e1b4b;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .register-card {
+    width: 90%;
+  }
+}
